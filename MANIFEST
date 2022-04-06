@@ -17,6 +17,7 @@ META.yml
 README
 t/LWP-Authen-OAuth2-ServiceProvider-Wikimedia/01-use.t
 t/LWP-Authen-OAuth2-ServiceProvider-Wikimedia/02-version.t
+t/LWP-Authen-OAuth2-ServiceProvider-Wikimedia/03-new.t
 Wikimedia.pm
 xt/LWP-Authen-OAuth2-ServiceProvider-Wikimedia/01-pod_coverage.t
 xt/LWP-Authen-OAuth2-ServiceProvider-Wikimedia/02-pod.t
