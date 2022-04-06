@@ -28,11 +28,40 @@ LWP::Authen::OAuth2::ServiceProvider::Wikimedia - Access Wikimedia using OAuth2.
 
 =head1 SYNOPSIS
 
-See L<https://developer.yahoo.com/oauth2/guide/"> for Yahoo's own documentation.
+ use LWP::Authen::OAuth2;
+
+ my $obj = LWP::Authen::OAuth2->new(
+         client_id => '__CLIENT_ID__',
+         client_secret => '__CLIENT_SECRET__',
+         service_provider => 'Wikimedia',
+
+         %{$other_parameters},
+ );
+
+=head1 DESCRIPTION
+
+See L<https://www.mediawiki.org/wiki/Extension:OAuth> for MediaWiki extension documentation.
+
+See L<https://www.mediawiki.org/wiki/OAuth/For_Developers> page which is for
+developers.
 
 =head1 REGISTERING
 
-Before you can use OAuth 2 with Yahoo you need to register yourself as an app. For that, go to L<https://developer.yahoo.com/apps/create/>.
+Before you can use OAuth 2 with Wikimedia you need to register yourself as an app. For that, go to L<https://meta.wikimedia.org/wiki/Special:OAuthConsumerRegistration/propose> registration page.
+
+=head1 DEPENDENCIES
+
+L<LWP::Authen::OAuth2::ServiceProvider::MediaWiki>.
+
+=head1 SEE ALSO
+
+=over
+
+=item L<LWP::Authen::OAuth2>
+
+Make requests to OAuth2 APIs.
+
+=back
 
 =head1 REPOSITORY
 
