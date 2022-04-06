@@ -4,7 +4,7 @@ use base qw(LWP::Authen::OAuth2::ServiceProvider::MediaWiki);
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub authorization_endpoint {
 	return 'https://meta.wikimedia.org/w/rest.php/oauth2/authorize';
@@ -81,6 +81,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
